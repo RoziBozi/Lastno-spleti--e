@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Računalniška trgovina Rozman Computers">
+    <meta name="keywords" content="računalniki, prenosniki, komponente, grafične kartice, procesorji, matične plošče">
+    <meta name="author" content="Blaž Rozman">
+    <title>Računalniška trgovina</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="container">
+            <div class="logo">
+                <img src="../slike/logo.png" alt="Logotip">
+                <h1>Rozman Computers</h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Domov</a></li>
+                        <li><a href="../o_nas.html" >O nas</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="trenutna">Storitve</a>
+                            <ul class="dropdown-content">
+                                <li><a href="racunalniki.html">Računalniki</a></li>
+                                <li><a href="prenosniki.html">Prenosniki</a></li>
+                                <li><a href="#" class="trenutna">Sama izbira</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Komponente</a>
+                            <ul class="dropdown-content">
+                                <li><a href="../komponente/graficne.html">Grafična kartica</a></li>
+                                <li><a href="../komponente/procesor.html">Procesor</a></li>
+                                <li><a href="../komponente/maticna_plosca.html">Matična plošča</a></li>
+                                <li><a href="../komponente/drugo.html">Drugi dodatki</a></li>
+                            </ul>    
+                        </li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../kontakt.html">Kontakt</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main_sama_izbira">
+        <div class="form-container">
+            <h2>Sestavite si računalnik po svojih željah</h2>
+            <p class="intro-text">Izberite komponente in sestavimo vam popoln računalnik za vaše potrebe</p>
+            
+            <form id="computerForm">
+                <div class="form-group">
+                    <label for="procesor">Procesor (CPU):</label>
+                    <select id="procesor" name="procesor" required>
+                        <option value="">Izberite procesor...</option>
+                        <option value="intel-i5-450">Intel Core i5-13400F (450 €)</option>
+                        <option value="intel-i7-650">Intel Core i7-13700F (650 €)</option>
+                        <option value="intel-i9-850">Intel Core i9-13900F (850 €)</option>
+                        <option value="amd-r5-350">AMD Ryzen 5 7600X (350 €)</option>
+                        <option value="amd-r7-500">AMD Ryzen 7 7700X (500 €)</option>
+                        <option value="amd-r9-750">AMD Ryzen 9 7900X (750 €)</option>
+                    </select>
+                    <div class="component-info">Možnost izbrati med Intel in AMD procesorji</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="graficna">Grafična kartica (GPU):</label>
+                    <select id="graficna" name="graficna" required>
+                        <option value="">Izberite grafično kartico...</option>
+                        <option value="gtx1660-300">NVIDIA GTX 1660 Super (300 €)</option>
+                        <option value="rtx4060-450">NVIDIA RTX 4060 (450 €)</option>
+                        <option value="rtx4070-650">NVIDIA RTX 4070 (650 €)</option>
+                        <option value="rtx4080-1100">NVIDIA RTX 4080 (1100 €)</option>
+                        <option value="rx6600-350">AMD RX 6600 XT (350 €)</option>
+                        <option value="rx7600-400">AMD RX 7600 XT (400 €)</option>
+                        <option value="rx7800-550">AMD RX 7800 XT (550 €)</option>
+                    </select>
+                    <div class="component-info">Grafična kartica je ključna za gaming in video obdelavo</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="maticna">Matična plošča:</label>
+                    <select id="maticna" name="maticna" required>
+                        <option value="">Izberite matično ploščo...</option>
+                        <option value="b450-120">MSI B450 Tomahawk (120 €)</option>
+                        <option value="b550-180">ASUS B550-F Gaming (180 €)</option>
+                        <option value="x570-250">Gigabyte X570 Aorus Elite (250 €)</option>
+                        <option value="b660-150">MSI B660M Pro (150 €)</option>
+                        <option value="z690-300">ASUS Z690-A Prime (300 €)</option>
+                    </select>
+                    <div class="component-info">Matična plošča mora biti kompatibilna z izbranim procesorjem</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="ram">Pomnilnik (RAM):</label>
+                    <select id="ram" name="ram" required>
+                        <option value="">Izberite količino RAM-a...</option>
+                        <option value="8gb-80">8GB DDR4 3200MHz (80 €)</option>
+                        <option value="16gb-150">16GB DDR4 3200MHz (150 €)</option>
+                        <option value="32gb-280">32GB DDR4 3200MHz (280 €)</option>
+                        <option value="16gb-ddr5-200">16GB DDR5 5600MHz (200 €)</option>
+                        <option value="32gb-ddr5-380">32GB DDR5 5600MHz (380 €)</option>
+                    </select>
+                    <div class="component-info">16GB je priporočeno za sodobno uporabo</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="storage">Shranjevanje:</label>
+                    <select id="storage" name="storage" required>
+                        <option value="">Izberite vrsto shranjevanja...</option>
+                        <option value="ssd-500gb-80">500GB SSD NVMe (80 €)</option>
+                        <option value="ssd-1tb-150">1TB SSD NVMe (150 €)</option>
+                        <option value="ssd-2tb-280">2TB SSD NVMe (280 €)</option>
+                        <option value="combo-1tb-120">500GB SSD + 1TB HDD (120 €)</option>
+                        <option value="combo-2tb-200">1TB SSD + 2TB HDD (200 €)</option>
+                    </select>
+                    <div class="component-info">SSD je hitrejši, HDD ponuja več prostora za nižjo ceno</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="napajanje">Napajanje (PSU):</label>
+                    <select id="napajanje" name="napajanje" required>
+                        <option value="">Izberite napajanje...</option>
+                        <option value="psu-600w-90">600W 80+ Bronze (90 €)</option>
+                        <option value="psu-750w-130">750W 80+ Gold (130 €)</option>
+                        <option value="psu-850w-180">850W 80+ Gold (180 €)</option>
+                        <option value="psu-1000w-250">1000W 80+ Platinum (250 €)</option>
+                    </select>
+                    <div class="component-info">Moč napajanja mora zadostovati vsem komponentam</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="ohisje">Ohišje:</label>
+                    <select id="ohisje" name="ohisje" required>
+                        <option value="">Izberite ohišje...</option>
+                        <option value="case-micro-60">Micro ATX ohišje (60 €)</option>
+                        <option value="case-mid-90">Mid Tower ATX (90 €)</option>
+                        <option value="case-full-150">Full Tower ATX (150 €)</option>
+                        <option value="case-gaming-120">Gaming ohišje z LED (120 €)</option>
+                    </select>
+                    <div class="component-info">Ohišje mora biti kompatibilno z matično ploščo</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="ime">Vaše ime:</label>
+                    <input type="text" id="ime" name="ime" required placeholder="Vnesite vaše ime">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email naslov:</label>
+                    <input type="email" id="email" name="email" required placeholder="vasa.email@primer.si">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefon">Telefonska številka:</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="041 123 456">
+                </div>
+
+                <button type="submit" class="submit-btn">Pošljite povpraševanje</button>
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Rozman Computers | Vse pravice pridržane</p>
+    </footer>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,725 @@
+
+/* Header and Footer*/
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: #00072D;
+    color: goldenrod;
+    padding: 10px 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header img {
+    width: 60px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+nav {
+    margin-left: auto;
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: goldenrod;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; 
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #00072D;
+    color: goldenrod;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #00072D;
+    border: 1px solid goldenrod;
+}
+
+.dropdown-content a {
+    color: goldenrod;
+    padding: 12px 16px;
+    display: block;
+    border: 1px solid goldenrod;
+}
+
+.trenutna {
+    background-color: #061860;
+    border-radius: 5%;
+}
+
+/* O nas css */
+/* Ustvaritev kvadratne oblike main */
+#main_onas {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* Urejanje naslovov in besedila */
+#main_onas h2, h3 {
+    color: #2c3e50;
+}
+#main_onas h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+#main_onas h3 {
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+#main_onas p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+#main_onas ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+#main_onas ul li {
+    margin-bottom: 8px;
+}
+#main_onas b {
+    color: #000;
+}
+
+/* index css */
+#main_index {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* za popravo bootsrapa */
+#main_index .carousel-caption {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+#main_index .carousel-caption p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#main_index .carousel-caption a {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#main_index .carousel-caption a:hover {
+    background: #0056b3;
+    color: white;
+}
+
+
+#main_index .carousel-item img {
+    height: 400px;
+}
+
+
+#main_index h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+}
+/* Garancijska tabela */
+#main_index .garancijska-tabela {
+    width: 100%;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+#main_index .garancijska-tabela th {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+#main_index .garancijska-tabela td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+/* Slike in besedilo pod na koncu strani */
+#main_index .container-slike {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#main_index .box {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+#main_index .box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+#main_index .box p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Blog css */
+#main_blog {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+#main_blog .blog {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+#main_blog .blog h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#main_blog .blog-datum {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#main_blog .blog p {
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+#main_blog .blog img {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    object-fit: cover;
+    margin: 15px 0;
+}
+
+#main_blog .preberi {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#main_blog .preberi:hover {
+    color: #0056b3;
+}
+
+/* Kontakt css */
+#main_kontakt {
+    padding: 20px;
+}
+#main_kontakt .container-kontakt {
+    background: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#main_kontakt .kontakt {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+#main_kontakt h2 {
+    text-align: center;
+}
+#main_kontakt .info {
+    margin-bottom: 10px;
+}
+/* css v obrazec */
+#main_kontakt .form {
+    margin-bottom: 15px;
+}
+#main_kontakt label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#main_kontakt input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#main_kontakt textarea {
+    height: 80px;
+}ž/* css za gumb */
+#main_kontakt .gumb {
+    background: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+/* css za ure */
+#main_kontakt .ure {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* css za računalnike */
+#main_racunalniki {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+#main_racunalniki h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#main_racunalniki .produkti {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+}
+#main_racunalniki .produkt {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+#main_racunalniki .produkt img {
+    width: 100%;
+    height: 25vh;
+    border-radius: 8px;
+}
+#main_racunalniki .produkt p {
+    color: #666;
+    margin: 5px 0;
+}
+#main_racunalniki .cena {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+#main_racunalniki .gumb {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#main_racunalniki .gumb:hover {
+    background: #2980b9;
+}
+
+/* css za prenosnike */
+#main_prenosniki {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+#main_prenosniki h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#main_prenosniki .produkti {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+}
+#main_prenosniki .produkt {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+#main_prenosniki .produkt img {
+    width: 100%;
+    height: 25vh;
+    border-radius: 8px;
+}
+#main_prenosniki .produkt p {
+    color: #666;
+    margin: 5px 0;
+}
+#main_prenosniki .cena {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+#main_prenosniki .gumb {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#main_prenosniki .gumb:hover {
+    background: #2980b9;
+}
+
+
+/* css za samo izbiro */
+#main_sama_izbira{
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+#main_sama_izbira .form-container {
+    background: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+#main_sama_izbira h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+}
+#main_sama_izbira .intro-text {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+#main_sama_izbira .form-group {
+    margin-bottom: 20px;
+}
+#main_sama_izbira label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+#main_sama_izbira select, input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background: white;
+}
+#main_sama_izbira select:focus, input:focus {
+    outline: none;
+    border-color: #666;
+}
+#main_sama_izbira .submit-btn {
+    background: #666;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+#main_sama_izbira .component-info {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 3px;
+}
+
+
+/* css za procesorje */
+#main_procesorji {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+#main_procesorji h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#main_procesorji .produkti {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+}
+#main_procesorji .produkt {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+#main_procesorji .produkt p {
+    color: #666;
+    margin: 5px 0;
+}
+#main_procesorji .cena {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+#main_procesorji .gumb {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#main_procesorji .gumb:hover {
+    background: #2980b9;
+}
+
+/* css za grafične kartice */
+#main_graficne {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+#main_graficne h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#main_graficne .produkti {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+}
+#main_graficne .produkt {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+#main_graficne .produkt p {
+    color: #666;
+    margin: 5px 0;
+}
+#main_graficne .cena {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+#main_graficne .gumb {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#main_graficne .gumb:hover {
+    background: #2980b9;
+}
+
+/* css za matične plošče */
+#main_maticna_plosca {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+#main_maticna_plosca h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#main_maticna_plosca .produkti {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+}
+#main_maticna_plosca .produkt {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+#main_maticna_plosca .produkt p {
+    color: #666;
+    margin: 5px 0;
+}
+#main_maticna_plosca .cena {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+#main_maticna_plosca .gumb {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#main_maticna_plosca .gumb:hover {
+    background: #2980b9;
+}
+
+/* css za drugo */
+
+#main_drugo {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+#main_drugo h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#main_drugo .produkti {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+}
+#main_drugo .produkt {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+#main_drugo .produkt p {
+    color: #666;
+    margin: 5px 0;
+}
+#main_drugo .cena {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+#main_drugo .gumb {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#main_drugo .gumb:hover {
+    background: #2980b9;
+}
